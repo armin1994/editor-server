@@ -6,7 +6,7 @@ var router = express.Router();
 
 router.post('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
-  const pathDirectory = 'C:/Users/Armin/Documents/learning/editor-server/client';
+  const pathDirectory = `${process.cwd()}/client`;
   const filePath = `${pathDirectory}/app.js`;
   const newCode = req.body.code;
   fs.writeFile(filePath, newCode, 'utf-8', function (err) {
