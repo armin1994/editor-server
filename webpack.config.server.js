@@ -54,7 +54,7 @@ if (!isProduction) {
   config.plugins.unshift(
     new StartServerPlugin({
       name: 'server.js',
-      nodeArgs: ['--inspect=5352']
+      nodeArgs: ['--inspect=5353']
     })
   )
 } else {
