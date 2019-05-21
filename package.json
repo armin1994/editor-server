@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env webpack --config webpack.config.server.js",
+    "start": "webpack --config webpack.config.server.js",
     "heroku-prebuild": "npm install --dev",
     "build": "rm -rf dist && NODE_ENV=production webpack -p --config webpack.config.server.js && NODE_ENV=production webpack -p --config webpack.config.client.js",
     "my-start": "NODE_ENV=production node dist/server.js"
